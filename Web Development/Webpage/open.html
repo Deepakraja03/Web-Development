@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Open Source</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="opensource.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Open Source</h1>
+</div>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Help</a>
+  <a href="login.html" class="right">Login</a>
+</div>
+
+  <div class="main">
+    <h1>PYTHON <img id="python" src="python.jfif" width="30rem"></h1>
+    <h5>Python description, Sep 17, 2022</h5>
+    <div><img id="program" src="helloworld.jpg"/></div>
+    <h1>Introduction to Python</h1>
+    <p class="text">Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
+
+        Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.</p>
+    <br>
+    <h1>PYTHON MODULES</h1>
+    <div><img id="png" src="1.png"/></div>
+    <p class="text">A Python module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include runnable code. Grouping related code into a module makes the code easier to understand and use. 
+      It also makes the code logically organized.
+      Import Module in Python –  Import statement
+      We can import the functions, classes defined in a module to another module using the import statement in some other Python source file. 
+      
+      Syntax:
+      
+      import module
+      When the interpreter encounters an import statement, it imports the module if the module is present in the search path. A search path is a list of directories that the interpreter searches for importing a module. For example, to import the module calc.py, we need to put the following command at the top of the script.
+      
+      Note: This does not import the functions or classes directly instead imports the module only. To access the functions inside the module the dot(.) operator is used.
+    </p>
+  </div>
+
+
+<div id="feedback-main">
+  <div id="feedback-div">
+    <form action="contact.php" method="post" class="form" id="feedback-form1" name="form1" enctype="multipart/form-data" onsubmit="reset();return false;">
+
+      <p class="name">
+        <input name="name" type="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" required placeholder="Name" id="feedback-name" />
+      </p>
+
+      <p class="email">
+        <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="feedback-email" placeholder="Email" required />
+      </p>
+
+      <p class="text">
+        <textarea name="comment" type="comment" class="validate[required,length[6,300]] feedback-input" id="feedback-comment" required placeholder="Hey, I really love the site but I believe that you could incorporate some ..... and also get rid of the ...... on the section."></textarea>
+      </p>
+
+      <div class="feedback-submit">
+        <input type="submit" value="SUBMIT" id="feedback-button-blue" onclick="alert('Your Feedback is submitted successfully. ')" />
+        <div class="feedback-ease"></div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<button id="popup" class="feedback-button" onclick="toggle_visibility()">Feedback</button>
+<script src="feedback.js"></script>
+
+
+<div class="footer">
+  <h2>Social Media</h2>
+  <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+</div>
+
+</body>
+</html>
